@@ -11,4 +11,5 @@
 module.exports.routes = {
   'GET /': 'test/test',
   'GET /test/': 'test/test',
+  'GET /task/user/:id': 'task/user',
 };
