@@ -9,6 +9,6 @@
  */
 
 module.exports.routes = {
-
-
+  'GET /': 'test/test',
+  'GET /test/': 'test/test',
 };
