@@ -1,3 +1,5 @@
+//controllers/user/update.js
+
 module.exports = {
   friendlyName: 'Update',
 
