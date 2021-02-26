@@ -19,7 +19,7 @@ module.exports = {
   },
 
   fn: async function (inputs) {
-    const maxLength = 79;
+    const maxLength = sails.config.custom.nameMaxLength;
     const name = inputs.name.trim().substring(0, maxLength);
     const user = await User.create({ name }).fetch();
 
