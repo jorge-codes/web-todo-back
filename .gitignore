@@ -135,4 +135,6 @@ lib-cov
 *.env
 *.env.local
 *.env.staging
+.nyc_output
+coverage
 

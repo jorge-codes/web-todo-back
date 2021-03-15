@@ -9,6 +9,7 @@ module.exports = {
 
   fn: async function () {
     // All done.
-    return { message: 'It works!' };
+    const response = { message: 'It works!' };
+    return response;
   },
 };
