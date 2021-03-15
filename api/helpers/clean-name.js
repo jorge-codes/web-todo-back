@@ -4,7 +4,7 @@ module.exports = {
 
   friendlyName: 'Clean name',
 
-  description: '',
+  description: 'Helper that removes whitespaces',
 
   inputs: {
     name: {
@@ -19,12 +19,11 @@ module.exports = {
     },
   },
 
-  fn: function (inputs) {
+  fn: function (inputs, exits) {
+    let name = inputs.name;
     const maxLength = sails.config.custom.nameMaxLength;
-    let name = inputs.name === undefined ? '' : inputs.name;
     name = name.trim().substring(0, maxLength);
 
-    // All done
-    return name;
+    return exits.success(name);
   },
 };

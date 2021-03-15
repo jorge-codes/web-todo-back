@@ -33,7 +33,7 @@ module.exports = {
     const user = await User.updateOne({ id }).set({ name });
 
     if (!user) {
-      exits.notFound();
+      return exits.notFound();
     }
 
     // All done.
